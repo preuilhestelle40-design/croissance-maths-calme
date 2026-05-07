@@ -573,6 +573,7 @@ function Index() {
         <Hero />
         <Methode />
         <Expertise />
+        <Formats />
         <Offres />
         <Avis />
         <Contact />
