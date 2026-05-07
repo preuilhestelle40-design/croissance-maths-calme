@@ -197,7 +197,7 @@ function Methode() {
 
 function Expertise() {
   return (
-    <section id="expertise" className="bg-secondary/40 border-y border-border/60">
+    <section id="expertise" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 relative">
           <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
@@ -492,7 +492,7 @@ function Avis() {
     },
   ];
   return (
-    <section id="avis" className="bg-cream/60 border-y border-border/60">
+    <section id="avis" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Ils témoignent</p>
