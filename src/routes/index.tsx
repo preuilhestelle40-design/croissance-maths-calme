@@ -1,26 +1,460 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Footer } from "@/components/site/Footer";
+import heroImg from "@/assets/hero-math.jpg";
+import estelleImg from "@/assets/estelle-portrait.jpg";
+import methodImg from "@/assets/method-detail.jpg";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Croissance — Cours de maths à Capbreton & en visio" },
+      {
+        name: "description",
+        content:
+          "Cours particuliers de mathématiques de la 3ème à la Terminale à Capbreton, Hossegor, Labenne et en visio. Méthode structurée, première séance offerte.",
+      },
+      { property: "og:title", content: "Croissance — Cours de maths à Capbreton" },
+      {
+        property: "og:description",
+        content:
+          "Redonner le goût des mathématiques et assurer une progression rapide, de la 3ème à la Terminale.",
+      },
+      { property: "og:image", content: heroImg },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Hero() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <section className="relative overflow-hidden">
+      <div className="bg-grain absolute inset-0 opacity-60 pointer-events-none" />
+      <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-12 gap-12 items-center relative">
+        <div className="lg:col-span-7">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3 py-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">
+            <span className="h-1.5 w-1.5 rounded-full bg-terracotta" />
+            Capbreton · Visio
+          </span>
+          <h1 className="mt-6 font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-primary text-balance">
+            Transformez les difficultés en réussite&nbsp;:
+            <span className="block italic text-terracotta/90 mt-2">
+              les maths en toute confiance.
+            </span>
+          </h1>
+          <p className="mt-7 text-lg text-foreground/75 max-w-xl text-pretty leading-relaxed">
+            De la 3ème à la Terminale, je redonne le goût des mathématiques et
+            assure une progression rapide. Basée à Capbreton, j'accompagne votre
+            enfant vers le progrès et la sérénité.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center gap-4">
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 text-sm font-medium tracking-wide hover:bg-primary/90 transition shadow-[0_10px_30px_-12px_oklch(0.36_0.05_200/0.6)]"
+            >
+              Réserver mon premier cours offert
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+            <a
+              href="#methode"
+              className="text-sm text-foreground/70 hover:text-primary transition underline-offset-4 hover:underline"
+            >
+              Découvrir la méthode
+            </a>
+          </div>
+
+          <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md">
+            {[
+              { k: "10+", v: "ans d'expérience" },
+              { k: "3ᵉ → Tᵉ", v: "tous niveaux lycée" },
+              { k: "100%", v: "personnalisé" },
+            ].map((s) => (
+              <div key={s.v}>
+                <dt className="font-serif text-2xl text-primary">{s.k}</dt>
+                <dd className="text-xs text-muted-foreground mt-1">{s.v}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        <div className="lg:col-span-5">
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-sand/60 to-terracotta/20 blur-2xl" />
+            <img
+              src={heroImg}
+              alt="Cahier de mathématiques avec stylo et tasse de thé sur un plan de travail serein"
+              width={1600}
+              height={1400}
+              className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-2xl shadow-primary/10"
+            />
+            <div className="absolute -bottom-6 -left-6 rounded-2xl bg-card border border-border px-5 py-4 shadow-xl shadow-primary/10 max-w-[220px]">
+              <p className="text-xs uppercase tracking-widest text-bronze">Première séance</p>
+              <p className="font-serif text-xl text-primary mt-1">Offerte</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Sans engagement, en présentiel ou visio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Methode() {
+  const steps = [
+    {
+      n: "01",
+      title: "Rituel",
+      lead: "Quelques questions simples sur les chapitres déjà étudiés.",
+      body:
+        "L'élève entretient ses compétences acquises, travaille ses automatismes et gagne en confiance.",
+    },
+    {
+      n: "02",
+      title: "Point leçon",
+      lead: "Les questions de l'élève trouvent enfin une réponse claire.",
+      body:
+        "Formules et méthodes sont revues à travers des exemples concrets. Un pense-bête est mis en place pour mémoriser durablement.",
+    },
+    {
+      n: "03",
+      title: "Entraînement",
+      lead: "Pratique active : exercices, problèmes, jeux et annales.",
+      body:
+        "Difficulté progressive, et travail régulier sur les annales pour les classes à examens — découvrir les attendus, sereinement.",
+    },
+  ];
+
+  return (
+    <section id="methode" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="grid lg:grid-cols-12 gap-12 items-end mb-14">
+        <div className="lg:col-span-7">
+          <p className="text-xs uppercase tracking-[0.22em] text-terracotta">La méthode Croissance</p>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+            Une méthode structurée pour une progression mesurable.
+          </h2>
+        </div>
+        <div className="lg:col-span-5">
+          <p className="text-foreground/70 leading-relaxed">
+            Chaque cours suit un déroulé pensé pour ancrer les acquis, lever les
+            blocages et construire l'autonomie. Une disponibilité par message
+            entre les séances complète l'accompagnement.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {steps.map((s) => (
+          <article
+            key={s.n}
+            className="group rounded-3xl bg-card border border-border/70 p-8 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all"
+          >
+            <div className="flex items-baseline justify-between">
+              <span className="font-serif text-5xl text-sand group-hover:text-terracotta transition-colors">
+                {s.n}
+              </span>
+              <span className="h-px w-12 bg-border" />
+            </div>
+            <h3 className="mt-6 font-serif text-2xl text-primary">{s.title}</h3>
+            <p className="mt-3 text-sm font-medium text-foreground/80">{s.lead}</p>
+            <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+          </article>
+        ))}
+      </div>
+
+      <div className="mt-16 grid lg:grid-cols-12 gap-10 items-center">
+        <img
+          src={methodImg}
+          alt="Outils mathématiques disposés sur un bureau épuré"
+          width={1200}
+          height={1400}
+          loading="lazy"
+          className="lg:col-span-5 rounded-3xl object-cover aspect-[4/5] w-full"
+        />
+        <div className="lg:col-span-7 space-y-5">
+          <h3 className="font-serif text-3xl text-primary">
+            Cours personnalisés, concrets et pensés pour durer.
+          </h3>
+          <ul className="space-y-4">
+            {[
+              "Diagnostic initial pour cibler les vrais blocages.",
+              "Plan de progression sur le trimestre, partagé avec les parents.",
+              "Disponibilité par message entre les cours pour les devoirs.",
+              "Présentiel à Capbreton ou visioconférence — même qualité.",
+            ].map((t) => (
+              <li key={t} className="flex gap-3 text-foreground/80">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-terracotta shrink-0" />
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Expertise() {
+  return (
+    <section id="expertise" className="bg-secondary/40 border-y border-border/60">
+      <div className="mx-auto max-w-6xl px-6 py-24 grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-5 relative">
+          <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
+          <img
+            src={estelleImg}
+            alt="Estelle, professeure de mathématiques à Capbreton"
+            width={1024}
+            height={1280}
+            loading="lazy"
+            className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
+          />
+        </div>
+        <div className="lg:col-span-7">
+          <p className="text-xs uppercase tracking-[0.22em] text-bronze">Le profil</p>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+            Double expertise : pédagogie & analyse.
+          </h2>
+          <p className="mt-4 font-serif italic text-xl text-terracotta/90">
+            Estelle, votre professeure de mathématiques.
+          </p>
+          <p className="mt-6 text-foreground/75 leading-relaxed text-lg max-w-2xl">
+            Diplômée d'un Master en Statistiques et Informatique, ancienne Data
+            Analyst et professeure en collège, j'apporte une vision concrète et
+            rigoureuse des mathématiques. Je ne me contente pas d'enseigner des
+            formules : je transmets une méthode de travail et une autonomie
+            durable.
+          </p>
+          <div className="mt-8 grid sm:grid-cols-3 gap-4">
+            {[
+              { k: "Master", v: "Statistiques & Informatique" },
+              { k: "Data Analyst", v: "Expérience en entreprise" },
+              { k: "Professeure", v: "Collège & particuliers" },
+            ].map((b) => (
+              <div key={b.k} className="rounded-2xl border border-border bg-card p-4">
+                <p className="font-serif text-primary">{b.k}</p>
+                <p className="text-xs text-muted-foreground mt-1">{b.v}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Offres() {
+  const cards = [
+    {
+      tag: "Carte A",
+      title: "Accompagnement annuel",
+      price: "Suivi hebdomadaire",
+      bullets: [
+        "Séance d'1h en présentiel ou visio",
+        "Individuel ou groupe restreint (duo, 3 ou max 4 élèves)",
+        "Plan de progression sur le trimestre",
+      ],
+      featured: false,
+    },
+    {
+      tag: "Carte B",
+      title: "Stages intensifs",
+      price: "Vacances scolaires",
+      bullets: [
+        "Remise à niveau stratégique",
+        "Approfondissement des chapitres clés",
+        "Format souple : 2 à 5 jours",
+      ],
+      featured: true,
+    },
+    {
+      tag: "Carte C",
+      title: "Préparation examens",
+      price: "Brevet & Bac",
+      bullets: [
+        "Coaching méthodologie",
+        "Gestion du temps et du stress",
+        "Travail régulier sur les annales",
+      ],
+      featured: false,
+    },
+  ];
+
+  return (
+    <section id="offres" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="text-center max-w-2xl mx-auto">
+        <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Les formats</p>
+        <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+          Trois manières d'avancer, à votre rythme.
+        </h2>
+      </div>
+
+      <div className="mt-14 grid md:grid-cols-3 gap-6">
+        {cards.map((c) => (
+          <article
+            key={c.tag}
+            className={`relative rounded-3xl p-8 border transition-all ${
+              c.featured
+                ? "bg-primary text-primary-foreground border-primary shadow-2xl shadow-primary/30 md:-translate-y-3"
+                : "bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
+            }`}
+          >
+            {c.featured && (
+              <span className="absolute -top-3 left-8 rounded-full bg-bronze text-primary-foreground text-[10px] uppercase tracking-widest px-3 py-1">
+                Le plus demandé
+              </span>
+            )}
+            <p
+              className={`text-xs uppercase tracking-[0.2em] ${
+                c.featured ? "text-bronze" : "text-terracotta"
+              }`}
+            >
+              {c.tag}
+            </p>
+            <h3 className="mt-3 font-serif text-2xl">{c.title}</h3>
+            <p
+              className={`mt-1 text-sm ${
+                c.featured ? "text-primary-foreground/70" : "text-muted-foreground"
+              }`}
+            >
+              {c.price}
+            </p>
+            <ul className="mt-6 space-y-3 text-sm">
+              {c.bullets.map((b) => (
+                <li key={b} className="flex gap-3">
+                  <span
+                    className={`mt-2 h-1.5 w-1.5 rounded-full shrink-0 ${
+                      c.featured ? "bg-bronze" : "bg-terracotta"
+                    }`}
+                  />
+                  <span className={c.featured ? "text-primary-foreground/90" : "text-foreground/80"}>
+                    {b}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="#contact"
+              className={`mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm transition ${
+                c.featured
+                  ? "bg-cream text-primary hover:bg-cream/90"
+                  : "bg-primary text-primary-foreground hover:bg-primary/90"
+              }`}
+            >
+              En savoir plus →
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Avis() {
+  const quotes = [
+    {
+      t: "Estelle est très pédagogue et patiente. Ma fille a repris confiance en elle dès les premiers cours.",
+      a: "Sophie M.",
+      r: "Parent — Terminale",
+    },
+    {
+      t: "Une méthode claire et structurée. J'ai gagné 4 points de moyenne en un trimestre.",
+      a: "Lucas R.",
+      r: "Élève — Première",
+    },
+    {
+      t: "Toujours disponible, à l'écoute et bienveillante. Je recommande sans hésiter.",
+      a: "Caroline L.",
+      r: "Parent — 3ème",
+    },
+  ];
+  return (
+    <section id="avis" className="bg-cream/60 border-y border-border/60">
+      <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="max-w-2xl">
+          <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Ils témoignent</p>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+            La confiance des familles, le progrès des élèves.
+          </h2>
+        </div>
+        <div className="mt-12 grid md:grid-cols-3 gap-6">
+          {quotes.map((q) => (
+            <figure
+              key={q.a}
+              className="rounded-3xl bg-card border border-border p-8 flex flex-col"
+            >
+              <span className="font-serif text-5xl leading-none text-terracotta">“</span>
+              <blockquote className="mt-2 text-foreground/80 leading-relaxed">{q.t}</blockquote>
+              <figcaption className="mt-6 pt-6 border-t border-border/60">
+                <p className="font-serif text-primary">{q.a}</p>
+                <p className="text-xs text-muted-foreground mt-1">{q.r}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Contact() {
+  return (
+    <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="rounded-3xl bg-primary text-primary-foreground p-10 sm:p-14 lg:p-20 relative overflow-hidden">
+        <div className="bg-grain absolute inset-0 opacity-30" />
+        <div className="relative grid lg:grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-7">
+            <p className="text-xs uppercase tracking-[0.22em] text-bronze">Premier cours offert</p>
+            <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-balance">
+              Prêts à donner un nouveau souffle aux mathématiques ?
+            </h2>
+            <p className="mt-5 text-primary-foreground/80 max-w-xl leading-relaxed">
+              Échangeons quelques minutes pour cerner les besoins de votre enfant
+              et planifier la première séance — sans engagement.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="tel:+33600000000"
+                className="inline-flex items-center gap-2 rounded-full bg-cream text-primary px-6 py-3.5 text-sm font-medium hover:bg-cream/90 transition"
+              >
+                Appeler maintenant
+              </a>
+              <a
+                href="mailto:contact@croissance-maths.fr"
+                className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-6 py-3.5 text-sm hover:bg-cream/10 transition"
+              >
+                Prendre rendez-vous
+              </a>
+            </div>
+          </div>
+          <div className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-cream/15">
+            <p className="text-xs uppercase tracking-[0.22em] text-bronze">Zone d'intervention</p>
+            <p className="mt-4 font-serif text-2xl leading-snug">
+              Côte Sud Landaise — Hossegor, Capbreton, Labenne, Ondres, Boucau.
+            </p>
+            <p className="mt-3 text-primary-foreground/75 text-sm">
+              & visioconférence partout en France.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Nav />
+      <main>
+        <Hero />
+        <Methode />
+        <Expertise />
+        <Offres />
+        <Avis />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
