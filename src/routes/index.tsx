@@ -218,13 +218,25 @@ function Expertise() {
           <p className="mt-4 font-serif italic text-xl text-terracotta/90">
             Estelle, votre professeure de mathématiques.
           </p>
-          <p className="mt-6 text-foreground/75 leading-relaxed text-lg max-w-2xl">
-            Diplômée d'un Master en Statistiques et Informatique, ancienne Data
-            Analyst et professeure en collège, j'apporte une vision concrète et
-            rigoureuse des mathématiques. Je ne me contente pas d'enseigner des
-            formules : je transmets une méthode de travail et une autonomie
-            durable.
-          </p>
+          <div className="mt-6 space-y-5 text-foreground/75 leading-relaxed text-lg max-w-2xl">
+            <p>
+              Ancienne Data Analyst en entreprise, diplômée d'un Master en
+              Statistiques et Informatique, j'ai choisi de quitter les écrans
+              pour revenir à l'humain. Après avoir enseigné en collège, j'ai
+              constaté une réalité frappante : en classe, le nombre d'élèves
+              étouffe souvent la curiosité. Beaucoup n'osent pas poser de
+              questions par peur du jugement ou par manque de temps.
+            </p>
+            <p>
+              <span className="font-serif italic text-terracotta/90">Ma mission :</span>{" "}
+              je suis convaincue que chaque élève possède les capacités de
+              réussir avec le bon cadre. Chez Croissance, je propose un
+              accompagnement haut de gamme où la rigueur scientifique rencontre
+              la bienveillance. Ici, on ose poser ses questions. On ne travaille
+              pas seulement les mathématiques : on construit l'autonomie, la
+              persévérance et la confiance qui serviront toute la vie.
+            </p>
+          </div>
           <div className="mt-8 grid sm:grid-cols-3 gap-4">
             {[
               { k: "Master", v: "Statistiques & Informatique" },
