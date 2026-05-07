@@ -255,6 +255,117 @@ function Expertise() {
   );
 }
 
+function Formats() {
+  const blocs = [
+    {
+      tag: "Bloc 1",
+      title: "Cours individuels",
+      subtitle: "L'excellence personnalisée",
+      hook: "L'attention totale pour une progression éclair.",
+      maths: [
+        "Diagnostic immédiat des blocages",
+        "Programme 100% sur-mesure",
+        "Rythme adapté à chaque élève",
+      ],
+      psy: [
+        { k: "Gestion du stress", v: "Apprendre à rester serein devant sa copie." },
+        { k: "Organisation", v: "Méthodes de planification pour alléger la charge mentale." },
+        { k: "Mindset", v: "Transformer le « je n'y arriverai pas » en stratégie de réussite." },
+      ],
+      cta: "Réserver mon premier cours offert",
+      featured: true,
+    },
+    {
+      tag: "Bloc 2",
+      title: "Cours en petit groupe",
+      subtitle: "L'énergie collective",
+      hook: "L'émulation du groupe, la précision du suivi.",
+      maths: [
+        "Format dynamique (2 à 4 élèves)",
+        "L'aspect « classe » sans la foule",
+        "Tarif accessible",
+      ],
+      psy: [
+        { k: "Collaboration", v: "Expliquer aux autres pour mieux comprendre soi-même." },
+        { k: "Oralité", v: "Oser prendre la parole et argumenter sans peur du jugement." },
+        { k: "Entraide", v: "Utiliser l'erreur collective comme un levier d'apprentissage." },
+      ],
+      cta: "Rejoindre un groupe",
+      featured: false,
+    },
+  ];
+
+  return (
+    <section id="formats" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="text-center max-w-2xl mx-auto">
+        <p className="text-xs uppercase tracking-[0.22em] text-terracotta">
+          Nos formats d'accompagnement
+        </p>
+        <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+          Deux manières de progresser, une même exigence.
+        </h2>
+        <p className="mt-5 text-foreground/70 leading-relaxed">
+          Au-delà des mathématiques, chaque format développe les compétences
+          psychosociales qui servent toute une scolarité — et bien plus.
+        </p>
+      </div>
+
+      <div className="mt-14 grid lg:grid-cols-2 gap-6">
+        {blocs.map((b) => (
+          <article
+            key={b.tag}
+            className={`relative rounded-3xl border p-8 sm:p-10 transition-all ${
+              b.featured
+                ? "bg-card border-primary/30 shadow-2xl shadow-primary/10"
+                : "bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
+            }`}
+          >
+            <p className="text-xs uppercase tracking-[0.22em] text-bronze">{b.tag}</p>
+            <h3 className="mt-3 font-serif text-3xl text-primary">{b.title}</h3>
+            <p className="mt-1 font-serif italic text-terracotta/90">{b.subtitle}</p>
+            <p className="mt-5 text-foreground/80 leading-relaxed">{b.hook}</p>
+
+            <div className="mt-8">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                Bénéfices maths
+              </p>
+              <ul className="mt-3 space-y-2 text-sm">
+                {b.maths.map((m) => (
+                  <li key={m} className="flex gap-3 text-foreground/80">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-terracotta shrink-0" />
+                    <span>{m}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-border/60">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                Compétences psychosociales
+              </p>
+              <dl className="mt-4 space-y-4">
+                {b.psy.map((p) => (
+                  <div key={p.k}>
+                    <dt className="font-serif text-primary">{p.k}</dt>
+                    <dd className="text-sm text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            <a
+              href="#contact"
+              className="mt-9 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm hover:bg-primary/90 transition"
+            >
+              {b.cta} →
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Offres() {
   const cards = [
     {
