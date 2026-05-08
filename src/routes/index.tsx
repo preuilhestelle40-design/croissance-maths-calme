@@ -3,7 +3,6 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import heroImg from "@/assets/hero-math.jpg";
 import estelleImg from "@/assets/estelle-portrait.jpg";
-import methodImg from "@/assets/method-detail.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -163,34 +162,6 @@ function Methode() {
         ))}
       </div>
 
-      <div className="mt-16 grid lg:grid-cols-12 gap-10 items-center">
-        <img
-          src={methodImg}
-          alt="Outils mathématiques disposés sur un bureau épuré"
-          width={1200}
-          height={1400}
-          loading="lazy"
-          className="lg:col-span-5 rounded-3xl object-cover aspect-[4/5] w-full"
-        />
-        <div className="lg:col-span-7 space-y-5">
-          <h3 className="font-serif text-3xl text-primary">
-            Cours personnalisés, concrets et pensés pour durer.
-          </h3>
-          <ul className="space-y-4">
-            {[
-              "Diagnostic initial pour cibler les vrais blocages.",
-              "Plan de progression sur le trimestre, partagé avec les parents.",
-              "Disponibilité par message entre les cours pour les devoirs.",
-              "Présentiel à Capbreton ou visioconférence — même qualité.",
-            ].map((t) => (
-              <li key={t} className="flex gap-3 text-foreground/80">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-terracotta shrink-0" />
-                <span>{t}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
     </section>
   );
 }
@@ -572,8 +543,8 @@ function Index() {
       <main>
         <Hero />
         <Methode />
-        <Expertise />
         <Formats />
+        <Expertise />
         <Offres />
         <Avis />
         <Contact />
