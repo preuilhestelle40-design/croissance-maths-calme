@@ -181,7 +181,7 @@ function Expertise() {
             className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
           />
         </div>
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-7">
           <p className="text-sm uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Pédagogie & Bienveillance.
