@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import heroImg from "@/assets/hero-math.jpg";
-import estelleImg from "@/assets/img_1324_2.jpg";
+import estelleImg from "@/assets/IMG_1324_2.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
