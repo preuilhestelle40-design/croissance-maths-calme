@@ -466,7 +466,7 @@ function Avis() {
     <section id="avis" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Ils témoignent</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-terracotta">Ils témoignent</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             La confiance des familles, le progrès des élèves.
           </h2>
