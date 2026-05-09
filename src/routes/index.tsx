@@ -340,18 +340,18 @@ function Formats() {
 function Offres() {
   const cards = [
     {
-      tag: "Carte A",
+      tag: "",
       title: "Accompagnement annuel",
       price: "Suivi hebdomadaire",
       bullets: [
-        "Séance d'1h en présentiel ou visio",
-        "Individuel ou groupe restreint (duo, 3 ou max 4 élèves)",
+        "Séance d'1h à 2h",
+        "Individuel ou groupe restreint (2 à 4 élèves)",
         "Plan de progression sur le trimestre",
       ],
       featured: false,
     },
     {
-      tag: "Carte B",
+      tag: "",
       title: "Stages intensifs",
       price: "Vacances scolaires",
       bullets: [
@@ -359,10 +359,10 @@ function Offres() {
         "Approfondissement des chapitres clés",
         "Format souple : 2 à 5 jours",
       ],
-      featured: true,
+      featured: false,
     },
     {
-      tag: "Carte C",
+      tag: "",
       title: "Préparation examens",
       price: "Brevet & Bac",
       bullets: [
@@ -370,7 +370,7 @@ function Offres() {
         "Gestion du temps et du stress",
         "Travail régulier sur les annales",
       ],
-      featured: false,
+      featured: true,
     },
   ];
 
