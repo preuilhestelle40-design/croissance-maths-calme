@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
-import heroImg from "@/assets/hero-math.jpg";
+import heroImg from "@/assets/pexels-mart-production-8472919_(1).jpg";
 const estelleImg = "src/assets/IMG_1324_2.jpg";
 
 export const Route = createFileRoute("/")({
@@ -81,7 +81,7 @@ function Hero() {
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-sand/60 to-terracotta/20 blur-2xl" />
             <img
               src={heroImg}
-              alt="Cahier de mathématiques avec stylo et tasse de thé sur un plan de travail serein"
+              alt="Élèves travaillant ensemble en groupe sur des exercices de mathématiques avec cahiers, calculatrice et outils de géométrie"
               width={1600}
               height={1400}
               className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-2xl shadow-primary/10"
