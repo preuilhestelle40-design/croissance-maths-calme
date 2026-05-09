@@ -170,18 +170,18 @@ function Expertise() {
   return (
     <section id="expertise" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24 grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 relative">
+        <div className="lg:col-span-4 relative">
           <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
           <img
             src={estelleImg}
             alt="Estelle, professeure de mathématiques à Capbreton"
-            width={512}
-            height={640}
+            width={400}
+            height={500}
             loading="lazy"
-            className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
+            className="relative rounded-3xl object-cover aspect-[4/5] w-full max-w-xs mx-auto shadow-xl shadow-primary/10"
           />
         </div>
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-8">
           <p className="text-sm uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Pédagogie & Bienveillance.
