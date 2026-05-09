@@ -189,7 +189,7 @@ function Expertise() {
           <p className="mt-4 font-serif italic text-xl text-terracotta/90">
             Estelle, votre professeure de mathématiques.
           </p>
-          <div className="mt-6 space-y-5 text-foreground/75 leading-relaxed text-lg max-w-2xl">
+          <div className="mt-6 space-y-5 text-foreground/75 leading-relaxed text-m max-w-2xl">
             <p>
               Ancienne Data Analyst en entreprise, diplômée d'un Master en
               Statistiques et Informatique, j'ai choisi de quitter les écrans
