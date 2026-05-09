@@ -15,7 +15,7 @@ export function Footer() {
         <div>
           <p className="text-foreground font-medium mb-2">Contact</p>
           <p>Estelle — Capbreton (40)</p>
-          <p className="mt-1">contact@cours-croissance.fr</p>
+          <p className="mt-1">contact@croissance-maths.fr</p>
           <p className="mt-1">06 87 27 14 70</p>
         </div>
       </div>
