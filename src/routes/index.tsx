@@ -508,13 +508,13 @@ function Contact() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="tel:+33600000000"
+                href="tel:+33687271470"
                 className="inline-flex items-center gap-2 rounded-full bg-cream text-primary px-6 py-3.5 text-sm font-medium hover:bg-cream/90 transition"
               >
                 Appeler maintenant
               </a>
               <a
-                href="mailto:contact@croissance-maths.fr"
+                href="mailto:contact@cours-croissance.fr"
                 className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-6 py-3.5 text-sm hover:bg-cream/10 transition"
               >
                 Prendre rendez-vous
