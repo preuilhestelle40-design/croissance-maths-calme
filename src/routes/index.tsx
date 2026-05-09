@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import heroImg from "@/assets/hero-math.jpg";
-import estelleImg from "@/assets/IMG_1324_2.jpg";
+const estelleImg = "https://images.pexels.com/photos/5649514/pexels-photo-5649514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -174,7 +174,7 @@ function Expertise() {
           <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
           <img
             src={estelleImg}
-            alt="Estelle, professeure de mathématiques à Capbreton"
+            alt="Elèves travaillant ensemble sur des exercices de mathématiques avec cahiers et calculatrice"
             width={1024}
             height={1280}
             loading="lazy"
