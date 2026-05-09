@@ -447,19 +447,19 @@ function Offres() {
 function Avis() {
   const quotes = [
     {
-      t: "Estelle est très pédagogue et patiente. Ma fille a repris confiance en elle dès les premiers cours.",
-      a: "Sophie M.",
-      r: "Parent — Terminale",
-    },
-    {
-      t: "Une méthode claire et structurée. J'ai gagné 4 points de moyenne en un trimestre.",
-      a: "Lucas R.",
-      r: "Élève — Première",
-    },
-    {
-      t: "Toujours disponible, à l'écoute et bienveillante. Je recommande sans hésiter.",
-      a: "Caroline L.",
+      t: "Estelle est top. Ma fille avait une moyenne en maths basse en 3eme. Elle se faisait du soucis pour son brevet. Grâce aux cours Estelle elle a eu 16 en maths et a obtenu son brevet avec mention très bien! Je recommande à 100%",
+      a: "Suzanne",
       r: "Parent — 3ème",
+    },
+    {
+      t: "Je recommande vivement Estelle, c'est une super prof de maths. Elle m'a donné des cours de maths pendant mon année de seconde et ça c'est très bien passé, grâce à elle, je comprenais beaucoup mieux qu'avec mon prof en classe. Les notes remontent, et je comprends tout ce quelle m'explique. Je continue avec Estelle pour la classe de 1ère",
+      a: "Chayma",
+      r: "Élève — 2nd",
+    },
+    {
+      t: "Estelle est une professeur en or! Elle a sauvé l’année de seconde et de première de ma fille en mathématiques. Elle sait s’adapter aux particularités des élèves ( ma fille est dys) sans jugement et avec beaucoup de bienveillance. Sa communication avec les parents est agréable et constructive.",
+      a: "Emelyne",
+      r: "Parent — 1ère",
     },
   ];
   return (
@@ -524,7 +524,7 @@ function Contact() {
           <div className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-cream/15">
             <p className="text-xs uppercase tracking-[0.22em] text-bronze">Zone d'intervention</p>
             <p className="mt-4 font-serif text-2xl leading-snug">
-              Côte Sud Landaise — Hossegor, Capbreton, Labenne, Ondres, Boucau.
+              Côte Sud Landaise — Hossegor, Capbreton, Labenne, Ondres, Tarnos.
             </p>
             <p className="mt-3 text-primary-foreground/75 text-sm">
               & visioconférence partout en France.
