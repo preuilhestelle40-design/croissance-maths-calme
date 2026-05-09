@@ -356,7 +356,7 @@ function Offres() {
       price: "Vacances scolaires",
       bullets: [
         "Remise à niveau stratégique",
-        "Approfondissement des chapitres clés",
+        "Approfondissement des chapitres",
         "Format souple : 2 à 5 jours",
       ],
       featured: false,
