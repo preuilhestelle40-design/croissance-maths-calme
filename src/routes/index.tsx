@@ -379,7 +379,7 @@ function Offres() {
       <div className="text-center max-w-2xl mx-auto">
         <p className="text-xs uppercase tracking-[0.30em] text-terracotta">Les formules</p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
-          Trois manières d'avancer, à votre rythme.
+          Trois manières d'avancer, au rythme de l'élève.
         </h2>
       </div>
 
