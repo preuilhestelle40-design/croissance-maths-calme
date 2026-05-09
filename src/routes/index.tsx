@@ -175,8 +175,8 @@ function Expertise() {
           <img
             src={estelleImg}
             alt="Estelle, professeure de mathématiques à Capbreton"
-            width={1024}
-            height={1280}
+            width={512}
+            height={640}
             loading="lazy"
             className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
           />
