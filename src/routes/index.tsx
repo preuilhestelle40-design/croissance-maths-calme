@@ -42,9 +42,9 @@ function Hero() {
             </span>
           </h1>
           <p className="mt-7 text-lg text-foreground/75 max-w-xl text-pretty leading-relaxed">
-            De la 3ème à la Terminale, je redonne le goût des mathématiques et
+            De la 3ème à la Terminale, je redonne le goût des mathématiques à mes élèves et
             assure une progression rapide. Basée à Capbreton, j'accompagne votre
-            enfant vers le progrès et la sérénité.
+            enfant vers le progrès et améliore sa confiance en soit.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
