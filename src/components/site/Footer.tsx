@@ -4,7 +4,8 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12 grid gap-8 md:grid-cols-3 text-sm text-muted-foreground">
         <div>
           <p className="font-serif text-2xl text-primary">Croissance</p>
-          <p className="mt-2">Accompagnement en mathématiques — Du collège à la Terminale.</p>
+          <p className="mt-2">Accompagnement en mathématiques</p>
+          <p> — Du collège à la Terminale.</p>
         </div>
         <div>
           <p className="text-foreground font-medium mb-2">Zone d'intervention</p>
