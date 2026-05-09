@@ -65,7 +65,7 @@ function Hero() {
           <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md">
             {[
               { k: "10+", v: "ans d'expérience" },
-              { k: "6ᵉ → Tᵉ", v: "toutes " },
+              { k: "6ᵉ → Tᵉ", v: "tous niveaux" },
               { k: "100%", v: "personnalisé" },
             ].map((s) => (
               <div key={s.v}>
@@ -129,7 +129,7 @@ function Methode() {
     <section id="methode" className="mx-auto max-w-6xl px-6 py-24">
       <div className="grid lg:grid-cols-12 gap-12 items-end mb-14">
         <div className="lg:col-span-7">
-          <p className="text-xs uppercase tracking-[0.30em] text-terracotta">La méthode Croissance</p>
+          <p className="text-sm uppercase tracking-[0.30em] text-terracotta">La méthode Croissance</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Une méthode structurée pour une progression mesurable.
           </h2>
