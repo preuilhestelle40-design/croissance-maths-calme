@@ -170,7 +170,7 @@ function Expertise() {
   return (
     <section id="expertise" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24 grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-4 relative">
+        <div className="lg:col-span-5 relative">
           <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
           <img
             src={estelleImg}
@@ -204,7 +204,7 @@ function Expertise() {
               réussir avec le bon cadre. Chez Croissance, je propose un
               accompagnement où la rigueur scientifique rencontre
               la bienveillance. Ici, on ose poser ses questions. On ne travaille
-              pas seulement les mathématiques : on construit un raisonnement logique, on améliore l'autonomie, la
+              pas seulement les mathématiques : on construit l'autonomie, la
               persévérance et la confiance qui serviront toute la vie.
             </p>
           </div>
