@@ -229,7 +229,7 @@ function Expertise() {
 function Formats() {
   const blocs = [
     {
-      tag: "",'bloc1
+      tag: "",
       title: "Cours individuels",
       subtitle: "L'excellence personnalisée",
       hook: "L'attention totale pour une progression éclair.",
