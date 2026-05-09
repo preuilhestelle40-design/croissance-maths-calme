@@ -239,9 +239,9 @@ function Formats() {
         "Rythme adapté à chaque élève",
       ],
       psy: [
-        { k: "Gestion du stress", v: "Apprendre à rester serein devant sa copie." },
         { k: "Organisation", v: "Méthodes de planification pour alléger la charge mentale." },
         { k: "Mindset", v: "Transformer le « je n'y arriverai pas » en stratégie de réussite." },
+        { k: "Gestion du stress", v: "Apprendre à rester serein devant sa copie." },
       ],
       cta: "Réserver mon premier cours",
       featured: true,
