@@ -247,7 +247,7 @@ function Formats() {
       featured: true,
     },
     {
-      tag: "Bloc 2",
+      tag: "",
       title: "Cours en petit groupe",
       subtitle: "L'énergie collective",
       hook: "L'émulation du groupe, la précision du suivi.",
