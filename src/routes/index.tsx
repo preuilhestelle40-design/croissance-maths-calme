@@ -129,7 +129,7 @@ function Methode() {
     <section id="methode" className="mx-auto max-w-6xl px-6 py-24">
       <div className="grid lg:grid-cols-12 gap-12 items-end mb-14">
         <div className="lg:col-span-7">
-          <p className="text-xs uppercase tracking-[0.22em] text-terracotta">La méthode Croissance</p>
+          <p className="text-xs uppercase tracking-[0.30em] text-terracotta">La méthode Croissance</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Une méthode structurée pour une progression mesurable.
           </h2>
@@ -182,7 +182,7 @@ function Expertise() {
           />
         </div>
         <div className="lg:col-span-7">
-          <p className="text-xs uppercase tracking-[0.22em] text-bronze">Le profil</p>
+          <p className="text-xs uppercase tracking-[0.30em] text-bronze">Le profil</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Double expertise : pédagogie & analyse.
           </h2>
@@ -269,7 +269,7 @@ function Formats() {
   return (
     <section id="formats" className="mx-auto max-w-6xl px-6 py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.22em] text-terracotta">
+        <p className="text-xs uppercase tracking-[0.30em] text-terracotta">
           Nos formats d'accompagnement
         </p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
@@ -291,13 +291,13 @@ function Formats() {
                 : "bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
             }`}
           >
-            <p className="text-xs uppercase tracking-[0.22em] text-bronze">{b.tag}</p>
+            <p className="text-xs uppercase tracking-[0.30em] text-bronze">{b.tag}</p>
             <h3 className="mt-3 font-serif text-3xl text-primary">{b.title}</h3>
             <p className="mt-1 font-serif italic text-terracotta/90">{b.subtitle}</p>
             <p className="mt-5 text-foreground/80 leading-relaxed">{b.hook}</p>
 
             <div className="mt-8">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+              <p className="text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
                 Bénéfices maths
               </p>
               <ul className="mt-3 space-y-2 text-sm">
@@ -311,7 +311,7 @@ function Formats() {
             </div>
 
             <div className="mt-8 pt-6 border-t border-border/60">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+              <p className="text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
                 Compétences psychosociales
               </p>
               <dl className="mt-4 space-y-4">
@@ -377,7 +377,7 @@ function Offres() {
   return (
     <section id="offres" className="mx-auto max-w-6xl px-6 py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Les formules</p>
+        <p className="text-xs uppercase tracking-[0.30em] text-terracotta">Les formules</p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
           Trois manières d'avancer, à votre rythme.
         </h2>
@@ -466,7 +466,7 @@ function Avis() {
     <section id="avis" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.25em] text-terracotta">Ils témoignent</p>
+          <p className="text-xs uppercase tracking-[0.30em] text-terracotta">Ils témoignent</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             La confiance des familles, le progrès des élèves.
           </h2>
@@ -498,7 +498,7 @@ function Contact() {
         <div className="bg-grain absolute inset-0 opacity-30" />
         <div className="relative grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
-            <p className="text-xs uppercase tracking-[0.22em] text-bronze">Premier cours offert</p>
+            <p className="text-xs uppercase tracking-[0.30em] text-bronze">Premier cours offert</p>
             <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-balance">
               Prêts à donner un nouveau souffle aux mathématiques ?
             </h2>
@@ -523,7 +523,7 @@ function Contact() {
             </div>
           </div>
           <div className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-cream/15">
-            <p className="text-xs uppercase tracking-[0.22em] text-bronze">Zone d'intervention</p>
+            <p className="text-xs uppercase tracking-[0.30em] text-bronze">Zone d'intervention</p>
             <p className="mt-4 font-serif text-2xl leading-snug">
               Côte Sud Landaise — Hossegor, Capbreton, Labenne, Ondres, Tarnos.
             </p>
