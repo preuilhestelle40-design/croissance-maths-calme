@@ -157,7 +157,7 @@ function Methode() {
             </div>
             <h3 className="mt-6 font-serif text-2xl text-primary">{s.title}</h3>
             <p className="mt-3 text-base font-medium text-foreground/80">{s.lead}</p>
-            <p className="mt-3 text-base text-muted-foreground leading-relaxed">{s.body}</p>
+            <p className="mt-3 font-weight:15px text-muted-foreground leading-relaxed">{s.body}</p>
           </article>
         ))}
       </div>
