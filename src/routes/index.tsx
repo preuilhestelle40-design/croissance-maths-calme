@@ -452,12 +452,12 @@ function Avis() {
       r: "Parent — 3ème",
     },
     {
-      t: "Je recommande vivement Estelle, c'est une super prof de maths. Elle m'a donné des cours de maths pendant mon année de seconde et ça c'est très bien passé, grâce à elle, je comprenais beaucoup mieux qu'avec mon prof en classe. Les notes remontent, et je comprends tout ce quelle m'explique. Je continue avec Estelle pour la classe de 1ère",
+      t: "Je recommande vivement Estelle, c'est une super prof de maths. Elle m'a donné des cours de maths pendant mon année de seconde et ça c'est très bien passé, grâce à elle, je comprenais beaucoup mieux qu'avec mon prof en classe. Les notes remontent, et je comprends tout ce qu'elle m'explique. Je continue avec Estelle pour la classe de 1ère",
       a: "Chayma",
       r: "Élève — 2nd",
     },
     {
-      t: "Estelle est une professeur en or! Elle a sauvé l’année de seconde et de première de ma fille en mathématiques. Elle sait s’adapter aux particularités des élèves ( ma fille est dys) sans jugement et avec beaucoup de bienveillance. Sa communication avec les parents est agréable et constructive.",
+      t: "Estelle est une professeure en or! Elle a sauvé l’année de seconde et de première de ma fille en mathématiques. Elle sait s’adapter aux particularités des élèves ( ma fille est dys) sans jugement et avec beaucoup de bienveillance. Sa communication avec les parents est agréable et constructive.",
       a: "Emelyne",
       r: "Parent — 1ère",
     },
