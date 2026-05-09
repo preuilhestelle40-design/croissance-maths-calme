@@ -413,7 +413,7 @@ function Offres() {
             >
               {c.price}
             </p>
-            <ul className="mt-6 space-y-3 font-weight:20px">
+            <ul className="mt-6 space-y-3 font-weight:16px">
               {c.bullets.map((b) => (
                 <li key={b} className="flex gap-3">
                   <span
