@@ -182,7 +182,7 @@ function Expertise() {
           />
         </div>
         <div className="lg:col-span-7">
-          <p className="text-xs uppercase tracking-[0.30em] text-bronze">Le profil</p>
+          <p className="text-xs uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Double expertise : pédagogie & analyse.
           </h2>
