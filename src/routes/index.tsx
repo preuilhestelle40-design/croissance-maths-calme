@@ -202,7 +202,7 @@ function Expertise() {
               <span className="font-serif italic text-terracotta/90">Ma mission :</span>{" "}
               je suis convaincue que chaque élève possède les capacités de
               réussir avec le bon cadre. Chez Croissance, je propose un
-              accompagnement haut de gamme où la rigueur scientifique rencontre
+              accompagnement où la rigueur scientifique rencontre
               la bienveillance. Ici, on ose poser ses questions. On ne travaille
               pas seulement les mathématiques : on construit l'autonomie, la
               persévérance et la confiance qui serviront toute la vie.
@@ -212,7 +212,7 @@ function Expertise() {
             {[
               { k: "Master", v: "Statistiques & Informatique" },
               { k: "Data Analyst", v: "Expérience en entreprise" },
-              { k: "Professeure", v: "Collège & particuliers" },
+              { k: "Enseignante", v: "Collège & particuliers" },
             ].map((b) => (
               <div key={b.k} className="rounded-2xl border border-border bg-card p-4">
                 <p className="font-serif text-primary">{b.k}</p>
