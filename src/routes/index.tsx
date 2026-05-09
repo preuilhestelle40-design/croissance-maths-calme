@@ -243,7 +243,7 @@ function Formats() {
         { k: "Organisation", v: "Méthodes de planification pour alléger la charge mentale." },
         { k: "Mindset", v: "Transformer le « je n'y arriverai pas » en stratégie de réussite." },
       ],
-      cta: "Réserver mon premier cours offert",
+      cta: "Réserver mon premier cours",
       featured: true,
     },
     {
@@ -262,7 +262,7 @@ function Formats() {
         { k: "Entraide", v: "Utiliser l'erreur collective comme un levier d'apprentissage." },
       ],
       cta: "Rejoindre un groupe",
-      featured: false,
+      featured: true,
     },
   ];
 
