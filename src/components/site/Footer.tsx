@@ -9,13 +9,14 @@ export function Footer() {
         </div>
         <div>
           <p className="text-foreground font-medium mb-2">Zone d'intervention</p>
-          <p>Hossegor · Capbreton · Labenne · Ondres · Boucau · Tarnos</p>
+          <p>Hossegor · Capbreton · Labenne · Ondres · Tarnos</p>
           <p className="mt-1">& Visioconférence partout en France</p>
         </div>
         <div>
           <p className="text-foreground font-medium mb-2">Contact</p>
           <p>Estelle — Capbreton (40)</p>
           <p className="mt-1">contact@croissance-maths.fr</p>
+          <p className="mt-1">06 87 27 14 70</p>
         </div>
       </div>
       <div className="border-t border-border/60 py-5 text-center text-xs text-muted-foreground">
