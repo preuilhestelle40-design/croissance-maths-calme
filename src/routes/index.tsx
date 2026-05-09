@@ -88,9 +88,9 @@ function Hero() {
             />
             <div className="absolute -bottom-6 -left-6 rounded-2xl bg-card border border-border px-5 py-4 shadow-xl shadow-primary/10 max-w-[220px]">
               <p className="text-xs uppercase tracking-widest text-bronze">Première séance</p>
-              <p className="font-serif text-xl text-primary mt-1">Offerte</p>
+              <p className="font-serif text-xl text-primary mt-1">30 min offertes</p>
               <p className="text-xs text-muted-foreground mt-1">
-                30 min, Sans engagement, en présentiel ou visio.
+                Sans engagement, en présentiel ou visio.
               </p>
             </div>
           </div>
