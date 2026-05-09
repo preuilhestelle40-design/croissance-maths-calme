@@ -344,7 +344,7 @@ function Offres() {
       title: "Accompagnement annuel",
       price: "Suivi hebdomadaire",
       bullets: [
-        "Séance d'1h à 2h",
+        "Séance d'1h",
         "Individuel ou groupe restreint (2 à 4 élèves)",
         "Plan de progression sur le trimestre",
       ],
