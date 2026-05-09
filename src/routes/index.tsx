@@ -544,8 +544,8 @@ function Index() {
         <Hero />
         <Methode />
         <Formats />
+        <Cours />
         <Expertise />
-        <Offres />
         <Avis />
         <Contact />
       </main>
