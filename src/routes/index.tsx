@@ -204,7 +204,7 @@ function Expertise() {
               réussir avec le bon cadre. Chez Croissance, je propose un
               accompagnement où la rigueur scientifique rencontre
               la bienveillance. Ici, on ose poser ses questions. On ne travaille
-              pas seulement les mathématiques : on construit l'autonomie, la
+              pas seulement les mathématiques : on construit un raisonnement logique, on améliore l'autonomie, la
               persévérance et la confiance qui serviront toute la vie.
             </p>
           </div>
