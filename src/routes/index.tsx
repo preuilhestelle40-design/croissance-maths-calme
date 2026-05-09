@@ -90,7 +90,7 @@ function Hero() {
               <p className="text-xs uppercase tracking-widest text-bronze">Première séance</p>
               <p className="font-serif text-xl text-primary mt-1">Offerte</p>
               <p className="text-xs text-muted-foreground mt-1">
-                Sans engagement, en présentiel ou visio.
+                30 min, Sans engagement, en présentiel ou visio.
               </p>
             </div>
           </div>
