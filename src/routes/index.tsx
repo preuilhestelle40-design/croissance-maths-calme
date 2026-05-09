@@ -377,7 +377,7 @@ function Offres() {
   return (
     <section id="offres" className="mx-auto max-w-6xl px-6 py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Les formats</p>
+        <p className="text-xs uppercase tracking-[0.22em] text-terracotta">Les formules</p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
           Trois manières d'avancer, à votre rythme.
         </h2>
