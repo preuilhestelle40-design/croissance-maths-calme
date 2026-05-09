@@ -258,7 +258,7 @@ function Formats() {
       ],
       psy: [
         { k: "Collaboration", v: "Expliquer aux autres pour mieux comprendre soi-même." },
-        { k: "Oralité", v: "Oser prendre la parole et argumenter sans peur du jugement." },
+        { k: "Oral", v: "Oser prendre la parole et argumenter sans peur du jugement." },
         { k: "Entraide", v: "Utiliser l'erreur collective comme un levier d'apprentissage." },
       ],
       cta: "Rejoindre un groupe",
