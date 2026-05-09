@@ -31,7 +31,7 @@ function Hero() {
       <div className="bg-grain absolute inset-0 opacity-60 pointer-events-none" />
       <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-12 gap-12 items-center relative">
         <div className="lg:col-span-7">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3 py-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3 py-1 text-sm uppercase tracking-[0.18em] text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-terracotta" />
             Capbreton · Côté sud landaise · Visio
           </span>
@@ -70,7 +70,7 @@ function Hero() {
             ].map((s) => (
               <div key={s.v}>
                 <dt className="font-serif text-2xl text-primary">{s.k}</dt>
-                <dd className="text-xs text-muted-foreground mt-1">{s.v}</dd>
+                <dd className="text-sm text-muted-foreground mt-1">{s.v}</dd>
               </div>
             ))}
           </dl>
@@ -87,9 +87,9 @@ function Hero() {
               className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-2xl shadow-primary/10"
             />
             <div className="absolute -bottom-6 -left-6 rounded-2xl bg-card border border-border px-5 py-4 shadow-xl shadow-primary/10 max-w-[220px]">
-              <p className="text-xs uppercase tracking-widest text-bronze">Première séance</p>
+              <p className="text-sm uppercase tracking-widest text-bronze">Première séance</p>
               <p className="font-serif text-xl text-primary mt-1">30 min offertes</p>
-              <p className="text-xs text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground mt-1">
                 Sans engagement, en présentiel ou visio.
               </p>
             </div>
@@ -182,7 +182,7 @@ function Expertise() {
           />
         </div>
         <div className="lg:col-span-7">
-          <p className="text-xs uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
+          <p className="text-sm uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             Pédagogie & Bienveillance.
           </h2>
@@ -216,7 +216,7 @@ function Expertise() {
             ].map((b) => (
               <div key={b.k} className="rounded-2xl border border-border bg-card p-4">
                 <p className="font-serif text-primary">{b.k}</p>
-                <p className="text-xs text-muted-foreground mt-1">{b.v}</p>
+                <p className="text-sm text-muted-foreground mt-1">{b.v}</p>
               </div>
             ))}
           </div>
@@ -269,7 +269,7 @@ function Formats() {
   return (
     <section id="formats" className="mx-auto max-w-6xl px-6 py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.30em] text-terracotta">
+        <p className="text-sm uppercase tracking-[0.30em] text-terracotta">
           Nos formats d'accompagnement
         </p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
@@ -291,7 +291,7 @@ function Formats() {
                 : "bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
             }`}
           >
-            <p className="text-xs uppercase tracking-[0.30em] text-bronze">{b.tag}</p>
+            <p className="text-sm uppercase tracking-[0.30em] text-bronze">{b.tag}</p>
             <h3 className="mt-3 font-serif text-3xl text-primary">{b.title}</h3>
             <p className="mt-1 font-serif italic text-terracotta/90">{b.subtitle}</p>
             <p className="mt-5 text-foreground/80 leading-relaxed">{b.hook}</p>
@@ -377,7 +377,7 @@ function Offres() {
   return (
     <section id="offres" className="mx-auto max-w-6xl px-6 py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.30em] text-terracotta">Les formules</p>
+        <p className="text-sm uppercase tracking-[0.30em] text-terracotta">Les formules</p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
           Trois manières d'avancer, au rythme de l'élève.
         </h2>
@@ -399,7 +399,7 @@ function Offres() {
               </span>
             )}
             <p
-              className={`text-xs uppercase tracking-[0.2em] ${
+              className={`text-sm uppercase tracking-[0.2em] ${
                 c.featured ? "text-bronze" : "text-terracotta"
               }`}
             >
@@ -466,7 +466,7 @@ function Avis() {
     <section id="avis" className="bg-muted/50 border-y border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.30em] text-terracotta">Ils témoignent</p>
+          <p className="text-sm uppercase tracking-[0.30em] text-terracotta">Ils témoignent</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
             La confiance des familles, le progrès des élèves.
           </h2>
@@ -481,7 +481,7 @@ function Avis() {
               <blockquote className="mt-2 text-foreground/80 leading-relaxed">{q.t}</blockquote>
               <figcaption className="mt-6 pt-6 border-t border-border/60">
                 <p className="font-serif text-primary">{q.a}</p>
-                <p className="text-xs text-muted-foreground mt-1">{q.r}</p>
+                <p className="text-sm text-muted-foreground mt-1">{q.r}</p>
               </figcaption>
             </figure>
           ))}
@@ -498,7 +498,7 @@ function Contact() {
         <div className="bg-grain absolute inset-0 opacity-30" />
         <div className="relative grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
-            <p className="text-xs uppercase tracking-[0.30em] text-bronze">Premier cours offert</p>
+            <p className="text-sm uppercase tracking-[0.30em] text-bronze">Premier cours offert</p>
             <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-balance">
               Prêts à donner un nouveau souffle aux mathématiques ?
             </h2>
@@ -523,7 +523,7 @@ function Contact() {
             </div>
           </div>
           <div className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-cream/15">
-            <p className="text-xs uppercase tracking-[0.30em] text-bronze">Zone d'intervention</p>
+            <p className="text-sm uppercase tracking-[0.30em] text-bronze">Zone d'intervention</p>
             <p className="mt-4 font-serif text-2xl leading-snug">
               Côte Sud Landaise — Hossegor, Capbreton, Labenne, Ondres, Tarnos.
             </p>
