@@ -156,7 +156,7 @@ function Methode() {
               <span className="h-px w-12 bg-border" />
             </div>
             <h3 className="mt-6 font-serif text-2xl text-primary">{s.title}</h3>
-            <p className="mt-3 text-sm font-medium text-foreground/80">{s.lead}</p>
+            <p className="mt-3 text-base font-medium text-foreground/80">{s.lead}</p>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
           </article>
         ))}
@@ -317,7 +317,7 @@ function Formats() {
               <dl className="mt-4 space-y-4 ">
                 {b.psy.map((p) => (
                   <div key={p.k}>
-                    <dt className="font-serif text-base">{p.k}</dt>
+                    <dt className="font-serif text-primary">{p.k}</dt>
                     <dd className="text-sm text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
                   </div>
                 ))}
