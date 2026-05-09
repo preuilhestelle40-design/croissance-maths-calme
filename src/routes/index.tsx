@@ -65,7 +65,7 @@ function Hero() {
           <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md">
             {[
               { k: "10+", v: "ans d'expérience" },
-              { k: "3ᵉ → Tᵉ", v: "tous niveaux lycée" },
+              { k: "6ᵉ → Tᵉ", v: "tous niveaux lycée" },
               { k: "100%", v: "personnalisé" },
             ].map((s) => (
               <div key={s.v}>
