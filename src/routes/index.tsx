@@ -178,7 +178,7 @@ function Expertise() {
             width={512}
             height={640}
             loading="lazy"
-            className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
+            className="relative rounded-2xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
           />
         </div>
         <div className="lg:col-span-7">
