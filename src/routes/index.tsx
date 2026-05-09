@@ -383,7 +383,7 @@ function Offres() {
         </h2>
       </div>
 
-      <div className="mt-14 grid md:grid-cols-3 gap-6">
+      <div className="mt-14 grid md:grid-cols-3 gap-6 text-lg">
         {cards.map((c) => (
           <article
             key={c.tag}
