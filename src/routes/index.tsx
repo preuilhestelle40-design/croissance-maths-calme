@@ -317,8 +317,8 @@ function Formats() {
               <dl className="mt-4 space-y-4 ">
                 {b.psy.map((p) => (
                   <div key={p.k}>
-                    <dt className="font-serif text-primary font-weight:16px">{p.k}</dt>
-                    <dd className="text-sm text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
+                    <dt className="font-serif text-primary">{p.k}</dt>
+                    <dd className="font-weight:16px text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
                   </div>
                 ))}
               </dl>
