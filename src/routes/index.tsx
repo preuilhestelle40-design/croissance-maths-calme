@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import heroImg from "@/assets/hero-math.jpg";
-const estelleImg = "https://images.pexels.com/photos/5649514/pexels-photo-5649514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+const estelleImg = "src/assets/IMG_1324_2.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
