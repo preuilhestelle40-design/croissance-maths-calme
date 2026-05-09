@@ -447,12 +447,12 @@ function Offres() {
 function Avis() {
   const quotes = [
     {
-      t: "Estelle est top. Ma fille avait une moyenne en maths basse en 3eme. Elle se faisait du soucis pour son brevet. Grâce aux cours Estelle elle a eu 16 en maths et a obtenu son brevet avec mention très bien! Je recommande à 100%",
+      t: "Estelle est top. Ma fille avait une moyenne en maths basse en 3eme. Elle se faisait du soucis pour son brevet. Grâce aux cours Estelle elle a eu 16 en maths et a obtenu son brevet avec mention très bien! Je recommande à 100%.",
       a: "Suzanne",
       r: "Parent — 3ème",
     },
     {
-      t: "Je recommande vivement Estelle, c'est une super prof de maths. Elle m'a donné des cours de maths pendant mon année de seconde et ça c'est très bien passé, grâce à elle, je comprenais beaucoup mieux qu'avec mon prof en classe. Les notes remontent, et je comprends tout ce qu'elle m'explique. Je continue avec Estelle pour la classe de 1ère",
+      t: "Je recommande vivement Estelle, c'est une super prof de maths. Elle m'a donné des cours de maths pendant mon année de seconde et ça c'est très bien passé, grâce à elle, je comprenais beaucoup mieux qu'avec mon prof en classe. Les notes remontent, et je comprends tout ce qu'elle m'explique. Je continue avec Estelle pour la classe de 1ère.",
       a: "Chayma",
       r: "Élève — 2nd",
     },
