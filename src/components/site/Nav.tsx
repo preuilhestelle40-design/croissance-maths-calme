@@ -2,8 +2,8 @@ import { Link } from "@tanstack/react-router";
 
 const links = [
   { href: "#methode", label: "Méthode" },
-  { href: "#expertise", label: "Profil" },
-  { href: "#offres", label: "Offres" },
+  { href: "#offres", label: "Cours" },
+  { href: "#expertise", label: "A propos" },
   { href: "#avis", label: "Avis" },
   { href: "#contact", label: "Contact" },
 ];
