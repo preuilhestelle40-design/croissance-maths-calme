@@ -33,7 +33,7 @@ function Hero() {
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3 py-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-terracotta" />
-            Capbreton · Visio
+            Capbreton · Côté sud landaise · Visio
           </span>
           <h1 className="mt-6 font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-primary text-balance">
             Transformez les difficultés en réussite&nbsp;:
