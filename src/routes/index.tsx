@@ -300,7 +300,7 @@ function Formats() {
               <p className="text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
                 Bénéfices maths
               </p>
-              <ul className="mt-3 space-y-2 text-sm">
+              <ul className="mt-3 space-y-2 font-weight:16px">
                 {b.maths.map((m) => (
                   <li key={m} className="flex gap-3 text-foreground/80">
                     <span className="mt-2 h-1.5 w-1.5 rounded-full bg-terracotta shrink-0" />
