@@ -514,17 +514,11 @@ function Contact() {
                 Appeler maintenant
               </a>
               <a
-                href="mailto:contact@cours-croissance.fr"
+                href="https://calendly.com/contact-cours-croissance/30min?primary_color=164547"
                 className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-6 py-3.5 text-sm hover:bg-cream/10 transition"
               >
                 Prendre rendez-vous
-
-                
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-cours-croissance/30min?background_color=164547&primary_color=164547'});return false;">Schedule time with me</a>
-
-  
+      
               </a>
             </div>
           </div>
