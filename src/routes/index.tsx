@@ -317,8 +317,8 @@ function Formats() {
               <dl className="mt-4 space-y-4">
                 {b.psy.map((p) => (
                   <div key={p.k}>
-                    <dt className="text-base font-serif text-primary">{p.k}</dt>
-                    <dd className="text-base text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
+                    <dt className="font-serif text-primary">{p.k}</dt>
+                    <dd className="text-sm text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
                   </div>
                 ))}
               </dl>
@@ -413,7 +413,7 @@ function Offres() {
             >
               {c.price}
             </p>
-            <ul className="mt-6 space-y-3 text-sm">
+            <ul className="mt-6 space-y-3 text-xl">
               {c.bullets.map((b) => (
                 <li key={b} className="flex gap-3">
                   <span
