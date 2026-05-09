@@ -345,7 +345,7 @@ function Offres() {
       price: "Suivi hebdomadaire",
       bullets: [
         "Séance d'1h",
-        "Individuel ou groupe restreint (2 à 4 élèves)",
+        "Individuel ou groupe restreint",
         "Plan de progression sur le trimestre",
       ],
       featured: false,
