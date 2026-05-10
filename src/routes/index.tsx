@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import heroImg from "@/assets/pexels-mart-production-8472919_(1).jpg";
-const estelleImg = "src/assets/IMG_1324_2.jpg";
+import estelleImg from "@/assets/IMG_1324_2.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,48 +29,48 @@ function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="bg-grain absolute inset-0 opacity-60 pointer-events-none" />
-      <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-12 gap-12 items-center relative">
+      <div className="mx-auto max-w-6xl px-4 md:px-6 pt-8 pb-10 md:pt-16 md:pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-12 gap-6 md:gap-12 items-center relative">
         <div className="lg:col-span-7">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3 py-1 text-sm uppercase tracking-[0.18em] text-muted-foreground">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-2.5 py-0.5 text-[10px] md:text-sm uppercase tracking-[0.18em] text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-terracotta" />
             Capbreton · Côté sud landaise · Visio
           </span>
-          <h1 className="mt-6 font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-primary text-balance">
+          <h1 className="mt-3 md:mt-6 font-serif text-3xl sm:text-6xl lg:text-7xl leading-[1.05] text-primary text-balance">
             Transformez les difficultés en réussite&nbsp;:
-            <span className="block italic text-terracotta/90 mt-2">
+            <span className="block italic text-terracotta/90 mt-1 md:mt-2">
               les maths en toute confiance.
             </span>
           </h1>
-          <p className="mt-7 text-lg text-foreground/75 max-w-xl text-pretty leading-relaxed">
+          <p className="mt-3 md:mt-7 text-sm md:text-lg text-foreground/75 max-w-xl text-pretty leading-relaxed">
             De la 3ème à la Terminale, je redonne le goût des mathématiques à mes élèves et
             assure une progression rapide. Basée à Capbreton, j'accompagne votre
             enfant vers le progrès et améliore sa confiance en soit.
           </p>
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-4 md:mt-9 flex flex-wrap items-center gap-3 md:gap-4">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 text-sm font-medium tracking-wide hover:bg-primary/90 transition shadow-[0_10px_30px_-12px_oklch(0.36_0.05_200/0.6)]"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 md:px-7 md:py-4 text-xs md:text-sm font-medium tracking-wide hover:bg-primary/90 transition shadow-[0_10px_30px_-12px_oklch(0.36_0.05_200/0.6)]"
             >
               Réserver mon premier cours offert
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
               href="#methode"
-              className="text-sm text-foreground/70 hover:text-primary transition underline-offset-4 hover:underline"
+              className="text-xs md:text-sm text-foreground/70 hover:text-primary transition underline-offset-4 hover:underline"
             >
               Découvrir la méthode
             </a>
           </div>
 
-          <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md">
+          <dl className="mt-6 md:mt-12 grid grid-cols-3 gap-4 md:gap-6 max-w-xs md:max-w-md">
             {[
               { k: "10+", v: "ans d'expérience" },
               { k: "6ᵉ → Tᵉ", v: "tous niveaux" },
               { k: "100%", v: "personnalisé" },
             ].map((s) => (
               <div key={s.v}>
-                <dt className="font-serif text-2xl text-primary">{s.k}</dt>
-                <dd className="text-sm text-muted-foreground mt-1">{s.v}</dd>
+                <dt className="font-serif text-lg md:text-2xl text-primary">{s.k}</dt>
+                <dd className="text-[10px] md:text-sm text-muted-foreground mt-0.5 md:mt-1">{s.v}</dd>
               </div>
             ))}
           </dl>
@@ -84,12 +84,12 @@ function Hero() {
               alt="Élèves travaillant ensemble en groupe sur des exercices de mathématiques avec cahiers, calculatrice et outils de géométrie"
               width={1600}
               height={1400}
-              className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-2xl shadow-primary/10"
+              className="relative rounded-2xl md:rounded-3xl object-cover aspect-[4/5] w-full max-h-[45vh] lg:max-h-none shadow-2xl shadow-primary/10"
             />
-            <div className="absolute -bottom-6 -left-6 rounded-2xl bg-card border border-border px-5 py-4 shadow-xl shadow-primary/10 max-w-[220px]">
-              <p className="text-sm uppercase tracking-widest text-bronze">Première séance</p>
-              <p className="font-serif text-xl text-primary mt-1">30 min offertes</p>
-              <p className="text-sm text-muted-foreground mt-1">
+            <div className="absolute -bottom-3 -left-2 md:-bottom-6 md:-left-6 rounded-xl md:rounded-2xl bg-card border border-border px-3 py-2 md:px-5 md:py-4 shadow-xl shadow-primary/10 max-w-[160px] md:max-w-[220px]">
+              <p className="text-[9px] md:text-sm uppercase tracking-widest text-bronze">Première séance</p>
+              <p className="font-serif text-sm md:text-xl text-primary mt-0.5 md:mt-1">30 min offertes</p>
+              <p className="text-[9px] md:text-sm text-muted-foreground mt-0.5 md:mt-1">
                 Sans engagement, en présentiel ou visio.
               </p>
             </div>
@@ -126,16 +126,16 @@ function Methode() {
   ];
 
   return (
-    <section id="methode" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="grid lg:grid-cols-12 gap-12 items-end mb-14">
+    <section id="methode" className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-24">
+      <div className="grid lg:grid-cols-12 gap-4 md:gap-12 items-end mb-6 md:mb-14">
         <div className="lg:col-span-7">
-          <p className="text-sm uppercase tracking-[0.30em] text-terracotta">La méthode Croissance</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+          <p className="text-[10px] md:text-sm uppercase tracking-[0.30em] text-terracotta">La méthode Croissance</p>
+          <h2 className="mt-1.5 md:mt-3 font-serif text-2xl sm:text-5xl text-primary text-balance">
             Une méthode structurée pour une progression mesurable.
           </h2>
         </div>
         <div className="lg:col-span-5">
-          <p className="text-foreground/70 leading-relaxed">
+          <p className="text-xs md:text-base text-foreground/70 leading-relaxed">
             Chaque cours suit un déroulé pensé pour ancrer les acquis, lever les
             blocages et construire l'autonomie. Une disponibilité par message
             entre les séances complète l'accompagnement.
@@ -143,21 +143,21 @@ function Methode() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-3 md:gap-6">
         {steps.map((s) => (
           <article
             key={s.n}
-            className="group rounded-3xl bg-card border border-border/70 p-8 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all"
+            className="group rounded-2xl md:rounded-3xl bg-card border border-border/70 p-4 md:p-8 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all"
           >
             <div className="flex items-baseline justify-between">
-              <span className="font-serif text-5xl text-sand group-hover:text-terracotta transition-colors">
+              <span className="font-serif text-3xl md:text-5xl text-sand group-hover:text-terracotta transition-colors">
                 {s.n}
               </span>
-              <span className="h-px w-12 bg-border" />
+              <span className="h-px w-8 md:w-12 bg-border" />
             </div>
-            <h3 className="mt-6 font-serif text-2xl text-primary">{s.title}</h3>
-            <p className="mt-3 text-base font-medium text-foreground/80">{s.lead}</p>
-            <p className="mt-3 text-m text-muted-foreground leading-relaxed">{s.body}</p>
+            <h3 className="mt-2 md:mt-6 font-serif text-lg md:text-2xl text-primary">{s.title}</h3>
+            <p className="mt-1.5 md:mt-3 text-xs md:text-base font-medium text-foreground/80">{s.lead}</p>
+            <p className="mt-1.5 md:mt-3 text-[11px] md:text-m text-muted-foreground leading-relaxed">{s.body}</p>
           </article>
         ))}
       </div>
@@ -169,27 +169,27 @@ function Methode() {
 function Expertise() {
   return (
     <section id="expertise" className="bg-muted/50 border-y border-border/60">
-      <div className="mx-auto max-w-6xl px-6 py-24 grid lg:grid-cols-12 gap-12 items-center">
+      <div className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-24 grid lg:grid-cols-12 gap-6 md:gap-12 items-center">
         <div className="lg:col-span-5 relative">
           <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
           <img
             src={estelleImg}
-            alt="profil"
+            alt="Estelle, professeure de mathématiques"
             width={1024}
             height={1280}
             loading="lazy"
-            className="relative rounded-3xl object-cover aspect-[4/5] w-full shadow-xl shadow-primary/10"
+            className="relative rounded-2xl md:rounded-3xl object-cover aspect-[4/5] w-full max-h-[35vh] lg:max-h-none shadow-xl shadow-primary/10"
           />
         </div>
         <div className="lg:col-span-7">
-          <p className="text-sm uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+          <p className="text-[10px] md:text-sm uppercase tracking-[0.30em] text-bronze">Qui suis-je ?</p>
+          <h2 className="mt-1.5 md:mt-3 font-serif text-2xl sm:text-5xl text-primary text-balance">
             Pédagogie & Bienveillance.
           </h2>
-          <p className="mt-4 font-serif italic text-xl text-terracotta/90">
+          <p className="mt-2 md:mt-4 font-serif italic text-sm md:text-xl text-terracotta/90">
             Estelle, votre professeure de mathématiques.
           </p>
-          <div className="mt-6 space-y-5 text-foreground/75 leading-relaxed text-m max-w-2xl">
+          <div className="mt-3 md:mt-6 space-y-2 md:space-y-5 text-foreground/75 leading-relaxed text-xs md:text-m max-w-2xl">
             <p>
               Ancienne Data Analyst en entreprise, diplômée d'un Master en
               Statistiques et Informatique, j'ai choisi de quitter les écrans
@@ -208,15 +208,15 @@ function Expertise() {
               persévérance et la confiance qui serviront toute la vie.
             </p>
           </div>
-          <div className="mt-8 grid sm:grid-cols-3 gap-4">
+          <div className="mt-4 md:mt-8 flex flex-wrap gap-2 md:gap-4">
             {[
               { k: "Master", v: "Statistiques & Informatique" },
               { k: "Data Analyst", v: "Expérience en entreprise" },
               { k: "Enseignante", v: "Collège & particuliers" },
             ].map((b) => (
-              <div key={b.k} className="rounded-2xl border border-border bg-card p-4">
-                <p className="font-serif text-primary">{b.k}</p>
-                <p className="text-sm text-muted-foreground mt-1">{b.v}</p>
+              <div key={b.k} className="rounded-xl md:rounded-2xl border border-border bg-card px-3 py-2 md:p-4">
+                <p className="font-serif text-xs md:text-base text-primary">{b.k}</p>
+                <p className="text-[10px] md:text-sm text-muted-foreground mt-0.5 md:mt-1">{b.v}</p>
               </div>
             ))}
           </div>
@@ -267,58 +267,58 @@ function Formats() {
   ];
 
   return (
-    <section id="formats" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="formats" className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-sm uppercase tracking-[0.30em] text-terracotta">
+        <p className="text-[10px] md:text-sm uppercase tracking-[0.30em] text-terracotta">
           Nos formats d'accompagnement
         </p>
-        <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+        <h2 className="mt-1.5 md:mt-3 font-serif text-2xl sm:text-5xl text-primary text-balance">
           Deux manières de progresser, une même exigence.
         </h2>
-        <p className="mt-5 text-foreground/70 leading-relaxed">
+        <p className="mt-2 md:mt-5 text-xs md:text-base text-foreground/70 leading-relaxed">
           Au-delà des mathématiques, chaque format développe les compétences
           psychosociales qui servent toute une scolarité — et bien plus.
         </p>
       </div>
 
-      <div className="mt-14 grid lg:grid-cols-2 gap-6">
+      <div className="mt-4 md:mt-14 grid lg:grid-cols-2 gap-3 md:gap-6">
         {blocs.map((b) => (
           <article
             key={b.tag}
-            className={`relative rounded-3xl border p-8 sm:p-10 transition-all ${
+            className={`relative rounded-2xl md:rounded-3xl border p-4 md:p-8 sm:p-10 transition-all ${
               b.featured
                 ? "bg-card border-primary/30 shadow-2xl shadow-primary/10"
                 : "bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
             }`}
           >
-            <p className="text-sm uppercase tracking-[0.30em] text-bronze">{b.tag}</p>
-            <h3 className="mt-3 font-serif text-3xl text-primary">{b.title}</h3>
-            <p className="mt-1 font-serif italic text-terracotta/90">{b.subtitle}</p>
-            <p className="mt-5 text-foreground/80 leading-relaxed">{b.hook}</p>
+            <p className="text-[9px] md:text-sm uppercase tracking-[0.30em] text-bronze">{b.tag}</p>
+            <h3 className="mt-1 md:mt-3 font-serif text-lg md:text-3xl text-primary">{b.title}</h3>
+            <p className="mt-0.5 md:mt-1 font-serif italic text-xs md:text-base text-terracotta/90">{b.subtitle}</p>
+            <p className="mt-2 md:mt-5 text-xs md:text-base text-foreground/80 leading-relaxed">{b.hook}</p>
 
-            <div className="mt-8">
-              <p className="text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
+            <div className="mt-3 md:mt-8">
+              <p className="text-[9px] md:text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
                 Bénéfices maths
               </p>
-              <ul className="mt-3 space-y-2 font-weight:16px">
+              <ul className="mt-1.5 md:mt-3 space-y-1 md:space-y-2">
                 {b.maths.map((m) => (
-                  <li key={m} className="flex gap-3 text-foreground/80">
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-terracotta shrink-0" />
+                  <li key={m} className="flex gap-2 md:gap-3 text-[11px] md:text-sm text-foreground/80">
+                    <span className="mt-1.5 md:mt-2 h-1 md:h-1.5 w-1 md:w-1.5 rounded-full bg-terracotta shrink-0" />
                     <span>{m}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-border/60">
-              <p className="text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
+            <div className="mt-3 md:mt-8 pt-3 md:pt-6 border-t border-border/60">
+              <p className="text-[9px] md:text-[11px] uppercase tracking-[0.30em] text-muted-foreground">
                 Compétences psychosociales
               </p>
-              <dl className="mt-4 space-y-4 ">
+              <dl className="mt-1.5 md:mt-4 space-y-1.5 md:space-y-4">
                 {b.psy.map((p) => (
                   <div key={p.k}>
-                    <dt className="text-m font-serif text-primary">{p.k}</dt>
-                    <dd className="text-sm  text-foreground/75 mt-1 leading-relaxed">{p.v}</dd>
+                    <dt className="text-[11px] md:text-m font-serif text-primary">{p.k}</dt>
+                    <dd className="text-[10px] md:text-sm text-foreground/75 mt-0.5 md:mt-1 leading-relaxed">{p.v}</dd>
                   </div>
                 ))}
               </dl>
@@ -326,7 +326,7 @@ function Formats() {
 
             <a
               href="#contact"
-              className="mt-9 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3.5 text-sm hover:bg-primary/90 transition"
+              className="mt-4 md:mt-9 inline-flex items-center gap-1.5 md:gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 md:px-6 md:py-3.5 text-xs md:text-sm hover:bg-primary/90 transition"
             >
               {b.cta} →
             </a>
@@ -375,53 +375,53 @@ function Offres() {
   ];
 
   return (
-    <section id="offres" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="offres" className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-24">
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-sm uppercase tracking-[0.30em] text-terracotta">Les formules</p>
-        <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+        <p className="text-[10px] md:text-sm uppercase tracking-[0.30em] text-terracotta">Les formules</p>
+        <h2 className="mt-1.5 md:mt-3 font-serif text-2xl sm:text-5xl text-primary text-balance">
           Trois manières d'avancer, au rythme de l'élève.
         </h2>
       </div>
 
-      <div className="mt-14 grid md:grid-cols-3 gap-6">
+      <div className="mt-4 md:mt-14 grid grid-cols-3 gap-2 md:gap-6">
         {cards.map((c) => (
           <article
             key={c.tag}
-            className={`relative rounded-3xl p-8 border transition-all ${
+            className={`relative rounded-2xl md:rounded-3xl p-3 md:p-8 border transition-all ${
               c.featured
                 ? "bg-primary text-primary-foreground border-primary shadow-2xl shadow-primary/30 md:-translate-y-3"
                 : "bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
             }`}
           >
             {c.featured && (
-              <span className="absolute -top-3 left-8 rounded-full bg-bronze text-primary-foreground text-[10px] uppercase tracking-widest px-3 py-1">
+              <span className="absolute -top-2 left-3 md:-top-3 md:left-8 rounded-full bg-bronze text-primary-foreground text-[8px] md:text-[10px] uppercase tracking-widest px-2 py-0.5 md:px-3 md:py-1">
                 Le plus demandé
               </span>
             )}
             <p
-              className={`text-sm uppercase tracking-[0.2em] ${
+              className={`text-[8px] md:text-sm uppercase tracking-[0.2em] ${
                 c.featured ? "text-bronze" : "text-terracotta"
               }`}
             >
               {c.tag}
             </p>
-            <h3 className="mt-3 font-serif text-2xl">{c.title}</h3>
+            <h3 className="mt-1 md:mt-3 font-serif text-xs md:text-2xl">{c.title}</h3>
             <p
-              className={`mt-1 text-sm ${
+              className={`mt-0.5 md:mt-1 text-[9px] md:text-sm ${
                 c.featured ? "text-primary-foreground/70" : "text-muted-foreground"
               }`}
             >
               {c.price}
             </p>
-            <ul className="mt-6 space-y-3 font-weight:16px">
+            <ul className="mt-2 md:mt-6 space-y-1 md:space-y-3">
               {c.bullets.map((b) => (
-                <li key={b} className="flex gap-3">
+                <li key={b} className="flex gap-1.5 md:gap-3">
                   <span
-                    className={`mt-2 h-1.5 w-1.5 rounded-full shrink-0 ${
+                    className={`mt-1 md:mt-2 h-1 md:h-1.5 w-1 md:w-1.5 rounded-full shrink-0 ${
                       c.featured ? "bg-bronze" : "bg-terracotta"
                     }`}
                   />
-                  <span className={c.featured ? "text-primary-foreground/90" : "text-foreground/80"}>
+                  <span className={`text-[9px] md:text-sm ${c.featured ? "text-primary-foreground/90" : "text-foreground/80"}`}>
                     {b}
                   </span>
                 </li>
@@ -429,7 +429,7 @@ function Offres() {
             </ul>
             <a
               href="#contact"
-              className={`mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm transition ${
+              className={`mt-3 md:mt-8 inline-flex items-center gap-1 md:gap-2 rounded-full px-3 py-1.5 md:px-5 md:py-3 text-[10px] md:text-sm transition ${
                 c.featured
                   ? "bg-cream text-primary hover:bg-cream/90"
                   : "bg-primary text-primary-foreground hover:bg-primary/90"
@@ -457,31 +457,31 @@ function Avis() {
       r: "Élève — 2nd",
     },
     {
-      t: "Estelle est une professeure en or! Elle a sauvé l’année de seconde et de première de ma fille en mathématiques. Elle sait s’adapter aux particularités des élèves ( ma fille est dys) sans jugement et avec beaucoup de bienveillance. Sa communication avec les parents est agréable et constructive.",
+      t: "Estelle est une professeure en or! Elle a sauvé l'année de seconde et de première de ma fille en mathématiques. Elle sait s'adapter aux particularités des élèves ( ma fille est dys) sans jugement et avec beaucoup de bienveillance. Sa communication avec les parents est agréable et constructive.",
       a: "Emelyne",
       r: "Parent — 1ère",
     },
   ];
   return (
     <section id="avis" className="bg-muted/50 border-y border-border/60">
-      <div className="mx-auto max-w-6xl px-6 py-24">
+      <div className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-24">
         <div className="max-w-2xl">
-          <p className="text-sm uppercase tracking-[0.30em] text-terracotta">Ils témoignent</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-primary text-balance">
+          <p className="text-[10px] md:text-sm uppercase tracking-[0.30em] text-terracotta">Ils témoignent</p>
+          <h2 className="mt-1.5 md:mt-3 font-serif text-2xl sm:text-5xl text-primary text-balance">
             La confiance des familles, le progrès des élèves.
           </h2>
         </div>
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
+        <div className="mt-4 md:mt-12 grid md:grid-cols-3 gap-3 md:gap-6">
           {quotes.map((q) => (
             <figure
               key={q.a}
-              className="rounded-3xl bg-card border border-border p-8 flex flex-col"
+              className="rounded-2xl md:rounded-3xl bg-card border border-border p-4 md:p-8 flex flex-col"
             >
-              <span className="font-serif text-5xl leading-none text-terracotta">“</span>
-              <blockquote className="mt-2 text-foreground/80 leading-relaxed">{q.t}</blockquote>
-              <figcaption className="mt-6 pt-6 border-t border-border/60">
-                <p className="font-serif text-primary">{q.a}</p>
-                <p className="text-sm text-muted-foreground mt-1">{q.r}</p>
+              <span className="font-serif text-3xl md:text-5xl leading-none text-terracotta">"</span>
+              <blockquote className="mt-1 md:mt-2 text-[11px] md:text-base text-foreground/80 leading-relaxed">{q.t}</blockquote>
+              <figcaption className="mt-3 md:mt-6 pt-3 md:pt-6 border-t border-border/60">
+                <p className="font-serif text-xs md:text-base text-primary">{q.a}</p>
+                <p className="text-[10px] md:text-sm text-muted-foreground mt-0.5 md:mt-1">{q.r}</p>
               </figcaption>
             </figure>
           ))}
@@ -493,41 +493,41 @@ function Avis() {
 
 function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="rounded-3xl bg-primary text-primary-foreground p-10 sm:p-14 lg:p-20 relative overflow-hidden">
+    <section id="contact" className="mx-auto max-w-6xl px-4 md:px-6 py-6 md:py-24">
+      <div className="rounded-2xl md:rounded-3xl bg-primary text-primary-foreground p-5 md:p-10 sm:p-14 lg:p-20 relative overflow-hidden">
         <div className="bg-grain absolute inset-0 opacity-30" />
-        <div className="relative grid lg:grid-cols-12 gap-10 items-center">
+        <div className="relative grid lg:grid-cols-12 gap-4 md:gap-10 items-center">
           <div className="lg:col-span-7">
-            <p className="text-sm uppercase tracking-[0.30em] text-bronze">Premier cours offert</p>
-            <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-balance">
+            <p className="text-[9px] md:text-sm uppercase tracking-[0.30em] text-bronze">Premier cours offert</p>
+            <h2 className="mt-1.5 md:mt-3 font-serif text-xl sm:text-5xl text-balance">
               Prêts à donner un nouveau souffle aux mathématiques ?
             </h2>
-            <p className="mt-5 text-primary-foreground/80 max-w-xl leading-relaxed">
+            <p className="mt-2 md:mt-5 text-xs md:text-base text-primary-foreground/80 max-w-xl leading-relaxed">
               Échangeons quelques minutes pour cerner les besoins de votre enfant
               et planifier la première séance — sans engagement.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-3 md:mt-8 flex flex-wrap gap-2 md:gap-3">
               <a
                 href="tel:+33687271470"
-                className="inline-flex items-center gap-2 rounded-full bg-cream text-primary px-6 py-3.5 text-sm font-medium hover:bg-cream/90 transition"
+                className="inline-flex items-center gap-1.5 md:gap-2 rounded-full bg-cream text-primary px-4 py-2 md:px-6 md:py-3.5 text-xs md:text-sm font-medium hover:bg-cream/90 transition"
               >
                 Appeler maintenant
               </a>
               <a
                 href="https://calendly.com/contact-cours-croissance/30min?primary_color=164547"
-                className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-6 py-3.5 text-sm hover:bg-cream/10 transition"
+                className="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-cream/30 px-4 py-2 md:px-6 md:py-3.5 text-xs md:text-sm hover:bg-cream/10 transition"
               >
                 Prendre rendez-vous
-      
+
               </a>
             </div>
           </div>
           <div className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-cream/15">
-            <p className="text-sm uppercase tracking-[0.30em] text-bronze">Zone d'intervention</p>
-            <p className="mt-4 font-serif text-2xl leading-snug">
+            <p className="text-[9px] md:text-sm uppercase tracking-[0.30em] text-bronze">Zone d'intervention</p>
+            <p className="mt-2 md:mt-4 font-serif text-sm md:text-2xl leading-snug">
               Côte Sud Landaise — Hossegor, Capbreton, Labenne, Ondres, Tarnos.
             </p>
-            <p className="mt-3 text-primary-foreground/75 text-sm">
+            <p className="mt-1 md:mt-3 text-primary-foreground/75 text-[10px] md:text-sm">
               & visioconférence partout en France.
             </p>
           </div>
