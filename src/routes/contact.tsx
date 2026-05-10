@@ -30,17 +30,17 @@ function ContactPage() {
                   Échangeons quelques minutes pour cerner les besoins de votre enfant
                   et planifier la première séance — sans engagement.
                 </p>
-                {/* Buttons side by side */}
-                <div className="mt-4 md:mt-8 flex flex-row flex-wrap gap-2 md:gap-3">
+                {/* Buttons on same line */}
+                <div className="mt-4 md:mt-8 flex flex-row gap-2 md:gap-3">
                   <a
                     href="tel:+33687271470"
-                    className="inline-flex items-center gap-1.5 md:gap-2 rounded-full bg-cream text-primary px-4 py-2.5 md:px-6 md:py-3.5 text-xs md:text-sm font-medium hover:bg-cream/90 transition"
+                    className="inline-flex items-center gap-1.5 md:gap-2 rounded-full bg-cream text-primary px-4 py-2.5 md:px-6 md:py-3.5 text-xs md:text-sm font-medium hover:bg-cream/90 transition whitespace-nowrap"
                   >
                     Appeler maintenant
                   </a>
                   <a
                     href="https://calendly.com/contact-cours-croissance/30min?primary_color=164547"
-                    className="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-cream/30 px-4 py-2.5 md:px-6 md:py-3.5 text-xs md:text-sm hover:bg-cream/10 transition"
+                    className="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-cream/30 px-4 py-2.5 md:px-6 md:py-3.5 text-xs md:text-sm hover:bg-cream/10 transition whitespace-nowrap"
                   >
                     Prendre rendez-vous
                   </a>

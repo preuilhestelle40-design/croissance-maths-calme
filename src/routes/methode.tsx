@@ -64,7 +64,6 @@ function MethodePage() {
                 key={s.n}
                 className="group rounded-2xl md:rounded-3xl bg-card border border-border/70 p-4 md:p-8 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all"
               >
-                {/* Number and title on same line on mobile */}
                 <div className="flex items-baseline gap-3 md:flex-col md:gap-0">
                   <span className="font-serif text-2xl md:text-5xl text-sand group-hover:text-terracotta transition-colors">
                     {s.n}
@@ -75,6 +74,17 @@ function MethodePage() {
                 <p className="mt-1.5 md:mt-3 text-[11px] md:text-m text-muted-foreground leading-relaxed">{s.body}</p>
               </article>
             ))}
+          </div>
+
+          {/* CTA button */}
+          <div className="mt-8 md:mt-14 text-center">
+            <a
+              href="/cours"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 md:px-8 md:py-4 text-xs md:text-sm font-medium tracking-wide hover:bg-primary/90 transition shadow-[0_10px_30px_-12px_oklch(0.36_0.05_200/0.6)]"
+            >
+              Découvrir les cours
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </a>
           </div>
         </section>
       </main>

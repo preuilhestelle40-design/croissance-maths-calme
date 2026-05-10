@@ -20,7 +20,7 @@ function AProposPage() {
       <main className="flex-1">
         <section className="bg-muted/50 border-y border-border/60">
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-10 md:py-24">
-            {/* Photo beside header on both mobile and desktop */}
+            {/* Photo beside header */}
             <div className="flex gap-4 md:gap-8 items-start mb-6 md:mb-8">
               <img
                 src={estelleImg}
@@ -41,9 +41,18 @@ function AProposPage() {
               </div>
             </div>
 
-            {/* Body text below */}
-            <div className="space-y-3 md:space-y-5 text-foreground/75 leading-relaxed text-xs md:text-m max-w-3xl">
-              <p>
+            {/* Body text — different content mobile vs desktop */}
+            <div className="space-y-3 md:space-y-5 text-foreground/75 leading-relaxed text-xs md:text-lg max-w-3xl">
+              {/* Mobile: shorter text */}
+              <p className="md:hidden">
+                Ancienne Data Analyst, diplômée d'un Master en Statistiques et
+                Informatique, j'ai quitté les écrans pour revenir à l'humain.
+                Après avoir enseigné en collège, j'ai constaté que le nombre
+                d'élèves étouffe souvent la curiosité. Beaucoup n'osent pas
+                poser de questions.
+              </p>
+              {/* Desktop: full text */}
+              <p className="hidden md:block">
                 Ancienne Data Analyst en entreprise, diplômée d'un Master en
                 Statistiques et Informatique, j'ai choisi de quitter les écrans
                 pour revenir à l'humain. Après avoir enseigné en collège, j'ai
@@ -51,7 +60,15 @@ function AProposPage() {
                 étouffe souvent la curiosité. Beaucoup n'osent pas poser de
                 questions par peur du jugement ou par manque de temps.
               </p>
-              <p>
+              {/* Mobile: shorter mission */}
+              <p className="md:hidden">
+                <span className="font-serif italic text-terracotta/90">Ma mission :</span>{" "}
+                chaque élève possède les capacités de réussir avec le bon cadre.
+                Chez Croissance, la rigueur scientifique rencontre la bienveillance.
+                On construit un raisonnement logique, l'autonomie et la confiance.
+              </p>
+              {/* Desktop: full mission */}
+              <p className="hidden md:block">
                 <span className="font-serif italic text-terracotta/90">Ma mission :</span>{" "}
                 je suis convaincue que chaque élève possède les capacités de
                 réussir avec le bon cadre. Chez Croissance, je propose un
@@ -62,16 +79,21 @@ function AProposPage() {
               </p>
             </div>
 
-            {/* Credentials on one line */}
+            {/* Credentials — different content mobile vs desktop */}
             <div className="mt-4 md:mt-8 flex flex-wrap gap-2 md:gap-4">
+              {/* Mobile: abbreviated */}
+              <div className="md:hidden rounded-xl border border-border bg-card px-3 py-1.5">
+                <p className="font-serif text-[11px] text-primary leading-none">Master · Data Analyst · Enseignante</p>
+              </div>
+              {/* Desktop: full with sub-labels */}
               {[
-                { k: "Master", v: "Stat. & Info." },
-                { k: "Data Analyst", v: "Entreprise" },
+                { k: "Master", v: "Statistiques et Informatique" },
+                { k: "Data Analyst", v: "Expérience en entreprise" },
                 { k: "Enseignante", v: "Collège & particuliers" },
               ].map((b) => (
-                <div key={b.k} className="rounded-xl md:rounded-2xl border border-border bg-card px-3 py-1.5 md:px-4 md:py-3">
-                  <p className="font-serif text-[11px] md:text-sm text-primary leading-none">{b.k}</p>
-                  <p className="text-[9px] md:text-xs text-muted-foreground mt-0.5">{b.v}</p>
+                <div key={b.k} className="hidden md:block rounded-2xl border border-border bg-card px-4 py-3">
+                  <p className="font-serif text-sm text-primary">{b.k}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{b.v}</p>
                 </div>
               ))}
             </div>
