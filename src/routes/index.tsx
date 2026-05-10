@@ -174,7 +174,7 @@ function Expertise() {
           <div className="absolute -inset-3 rounded-3xl bg-bronze/20 blur-2xl" />
           <img
             src={estelleImg}
-            alt="Elèves travaillant ensemble sur des exercices de mathématiques avec cahiers et calculatrice"
+            alt="profil"
             width={1024}
             height={1280}
             loading="lazy"
