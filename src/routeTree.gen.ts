@@ -9,8 +9,38 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as MethodeRouteImport } from './routes/methode'
+import { Route as CoursRouteImport } from './routes/cours'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AvisRouteImport } from './routes/avis'
+import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as IndexRouteImport } from './routes/index'
 
+const MethodeRoute = MethodeRouteImport.update({
+  id: '/methode',
+  path: '/methode',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoursRoute = CoursRouteImport.update({
+  id: '/cours',
+  path: '/cours',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AvisRoute = AvisRouteImport.update({
+  id: '/avis',
+  path: '/avis',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AProposRoute = AProposRouteImport.update({
+  id: '/a-propos',
+  path: '/a-propos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +49,90 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/avis': typeof AvisRoute
+  '/contact': typeof ContactRoute
+  '/cours': typeof CoursRoute
+  '/methode': typeof MethodeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/avis': typeof AvisRoute
+  '/contact': typeof ContactRoute
+  '/cours': typeof CoursRoute
+  '/methode': typeof MethodeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/avis': typeof AvisRoute
+  '/contact': typeof ContactRoute
+  '/cours': typeof CoursRoute
+  '/methode': typeof MethodeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/a-propos' | '/avis' | '/contact' | '/cours' | '/methode'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/a-propos' | '/avis' | '/contact' | '/cours' | '/methode'
+  id:
+    | '__root__'
+    | '/'
+    | '/a-propos'
+    | '/avis'
+    | '/contact'
+    | '/cours'
+    | '/methode'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AProposRoute: typeof AProposRoute
+  AvisRoute: typeof AvisRoute
+  ContactRoute: typeof ContactRoute
+  CoursRoute: typeof CoursRoute
+  MethodeRoute: typeof MethodeRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/methode': {
+      id: '/methode'
+      path: '/methode'
+      fullPath: '/methode'
+      preLoaderRoute: typeof MethodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cours': {
+      id: '/cours'
+      path: '/cours'
+      fullPath: '/cours'
+      preLoaderRoute: typeof CoursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/avis': {
+      id: '/avis'
+      path: '/avis'
+      fullPath: '/avis'
+      preLoaderRoute: typeof AvisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/a-propos': {
+      id: '/a-propos'
+      path: '/a-propos'
+      fullPath: '/a-propos'
+      preLoaderRoute: typeof AProposRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +145,11 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AProposRoute: AProposRoute,
+  AvisRoute: AvisRoute,
+  ContactRoute: ContactRoute,
+  CoursRoute: CoursRoute,
+  MethodeRoute: MethodeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
